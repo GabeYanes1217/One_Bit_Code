@@ -1,0 +1,386 @@
+body {
+    background-color: white;
+}
+
+header {
+    background-color: #FF9A6C;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 583px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+}
+
+header nav ul a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+#inicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 84px;
+    background-image: url(../assets/shape.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 477px;
+    width: 100%;
+    height: 673px;
+}
+
+#clinic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 84px;
+    width: 100%;
+    height: 542px;
+}
+
+#clinic ul {
+    gap: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+#clinic ul li {
+    line-height: 200%;
+}
+
+#farmacia {
+    width: 100%;
+    height: 844px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 128px;
+}
+
+#farmacia h1 {
+    width: 469px;
+    height: 70px;
+    text-align: center;
+}
+
+#farmacia p {
+    width: 954px;
+    height: 216px;
+    text-align: center;
+}
+
+#duvidas {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 64px 80px;
+}
+
+.duvida {
+    position: relative;
+}
+
+
+
+.duvida h3 {
+    border: 2px solid #FF9A6C;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 24px;
+}
+
+.duvida img {
+    position: absolute;
+    top: 32px;
+    right: 24px;
+}
+
+.duvida p {
+    border-right: 1px solid #FF9A6C;
+    border-bottom: 1px solid #FF9A6C;
+    border-left: 1px solid #FF9A6C;
+    border-radius: 0 0 8px 8px;
+    margin-top: -8px;
+    padding: 0 24px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: 1.2s;
+}
+
+.duvida.ativa p {
+    padding: 24px;
+    height: fit-content;
+    opacity: 1;
+}
+
+footer {
+    height: 320px;
+    background-color: rgba(255, 152, 108, 0.25);
+    display: flex;
+    gap: 80px;
+    padding: 64px 80px;
+    justify-content: space-evenly;
+}
+
+footer img,
+footer h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #263238;
+}
+
+footer nav a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 150%;
+    color: black;
+}
+
+.creditos {
+    height: 82px;
+    background-color: #263238;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.creditos p {
+    font-size: 16px;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 150%;
+    color: white;
+}
+
+.creditos a {
+    color: #FF9A6C
+}
+
+.box0 {
+    margin-top: 129px;
+    width: 591px;
+    height: 321px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+
+.box1 {
+    width: 591px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+    gap: 20px;
+}
+
+.box1 ul {
+    list-style: disc;
+}
+
+.box1 li {
+    margin-left: 32px;
+}
+
+.box2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.box3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.box3 nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bnts {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 48px;
+}
+
+.bnt1 {
+    width: 245px;
+    height: 52px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    background-color: #FF9A6C;
+    border-radius: 8px;
+}
+
+.bnt2 {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #FF9A6C;
+}
+
+li {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 150%;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 110%;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 110%;
+}
+
+
+/* para dispositivos moveis, extremamente pequenos */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: normal;
+    }
+
+    #inicio {
+        width: 100%;
+        height: fit-content;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .box0 {
+        margin-top: 129px;
+        width: 591px;
+        height: 321px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .bnts {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 48px;
+    }
+
+    #clinic {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        margin-top: 84px;
+        width: 100%;
+        height: fit-content;
+        align-items: center;
+    }
+
+    .box1 {
+        text-align: center;
+    }
+
+    #farmacia {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 36px;
+    }
+
+    #farmacia p {
+        width: fit-content;
+        height: 216px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #imagem {
+        width: 400px;
+        height: 400px;
+    }
+
+    #duvidas {
+        display: flex;
+        align-items: center;
+        gap: 64px;
+        padding: 120px 80px;
+        flex-direction: column-reverse;
+    }
+
+    .box2 {
+        align-items: center;
+    }
+
+    footer {
+        height: 320px;
+        background-color: rgba(255, 152, 108, 0.25);
+        display: flex;
+        gap: 30px;
+        padding: 64px 80px;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .box3 nav {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .creditos p {
+        font-size: 14px;
+        font-weight: 200;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 150%;
+        color: white;
+        text-align: center;
+    }
+}
+
